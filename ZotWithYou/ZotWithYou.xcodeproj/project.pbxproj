@@ -19,6 +19,8 @@
 		E5C0772F2B65A1E200A42801 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C0772E2B65A1E200A42801 /* Settings.swift */; };
 		E5C077312B65A20700A42801 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C077302B65A20700A42801 /* Explore.swift */; };
 		EB23139C2B65729B00464857 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23139B2B65729B00464857 /* Profile.swift */; };
+		EB99CE052B65C6B200F33F98 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99CE042B65C6B200F33F98 /* Chat.swift */; };
+		EB99CE072B65C7B400F33F98 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99CE062B65C7B400F33F98 /* Club.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E5C0772E2B65A1E200A42801 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E5C077302B65A20700A42801 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		EB23139B2B65729B00464857 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		EB99CE042B65C6B200F33F98 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		EB99CE062B65C7B400F33F98 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		E589812B2B64AE7B0041D3D8 /* ZotWithYou */ = {
 			isa = PBXGroup;
 			children = (
+				EB99CE062B65C7B400F33F98 /* Club.swift */,
+				EB99CE042B65C6B200F33F98 /* Chat.swift */,
 				EB23139B2B65729B00464857 /* Profile.swift */,
 				E5A9D4F32B65B342002B5756 /* RealProfile.swift */,
 				E5C0772E2B65A1E200A42801 /* Settings.swift */,
@@ -275,10 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E589812F2B64AE7B0041D3D8 /* ContentView.swift in Sources */,
+				EB99CE072B65C7B400F33F98 /* Club.swift in Sources */,
 				EB23139C2B65729B00464857 /* Profile.swift in Sources */,
 				E5C077312B65A20700A42801 /* Explore.swift in Sources */,
 				E5A9D4F42B65B342002B5756 /* RealProfile.swift in Sources */,
 				E5C0772F2B65A1E200A42801 /* Settings.swift in Sources */,
+				EB99CE052B65C6B200F33F98 /* Chat.swift in Sources */,
 				E5A9D4F22B65B033002B5756 /* Location.swift in Sources */,
 				E589812D2B64AE7B0041D3D8 /* ZotWithYouApp.swift in Sources */,
 			);

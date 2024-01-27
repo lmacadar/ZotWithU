@@ -30,15 +30,33 @@ struct Settings: View {
             
             TextField("Change your name", text: $name) //name
                 .frame(width: 200, height: 40)
+                .padding()
             
             TextField("Change your email", text: $email) //email
                 .frame(width: 200, height: 40)
+                .padding()
             
             SecureField("Change your password", text: $password) //password
                 .frame(width: 200, height: 40)
+                .padding()
+            
+    
+            Button("Change Profile Picture"){}
+                .font(.custom("San Francisco", size: 15))
+                .padding()
+                .background(Capsule()
+                    .fill(Color.yellow))
+                .foregroundColor(.black)
+                .cornerRadius(2)
+                
+                    
+            
+          
             
             Text("Delete Account")
                 .foregroundColor(Color.red)
+            
+            
                 
         } //end of vstack
   

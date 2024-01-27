@@ -1,5 +1,5 @@
 //
-//  Club.swift
+//  Chat.swift
 //  ZotWithYou
 //
 //  Created by Kenrich Huynh on 1/27/24.

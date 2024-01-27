@@ -163,6 +163,6 @@ struct Location: View{
                 
             }
         }
-        .padding()
+        //.padding()
     }
-}
+
