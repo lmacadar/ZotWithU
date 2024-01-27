@@ -78,6 +78,10 @@ struct Profile: View{
         )
         //.padding(.vertical, 70)
         
+        TabView {
+            
+        }
+        
         Text("Hello World")
             .background(Color.blue)
         
