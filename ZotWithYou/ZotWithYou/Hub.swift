@@ -23,22 +23,7 @@ struct Profile: View{
     
     var body: some View{
         VStack{
-            Color.blue
-            if isWelcomeVisible {
-                withAnimation(.easeInOut(duration: 0.5)){
-                    Text(welcomeMessage)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .onAppear(){
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0){
-                                hideWelcome()
-                            }
-                        }
-                }
-                
-            }
+            
             /*
             if !isWelcomeVisible{ //after welcome is gone
                 TextField("Enter tags", text: $tag) //tag
@@ -90,8 +75,7 @@ struct Profile: View{
                 }
         }
         
-        Text("Hello World")
-            .background(Color.blue)
+        
         
     }
     /*
