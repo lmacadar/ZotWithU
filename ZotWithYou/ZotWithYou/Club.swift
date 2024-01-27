@@ -16,13 +16,14 @@ struct Club: View{
     @State private var clubTimes = "t/est"
     @State private var clubTags: [String] = ["TEST", "TEST", "TEST"]
 
-    @State private var smallTextSize = 12 
-    @State private var mediumTextSize = 16 
+    @State private var smallTextSize: Int = 12 
+    @State private var mediumTextSize: Int = 16 
+    @State private var largeTextSize: Int = 20 
     
     var body: some View{
         VStack{
             Text(clubName)
-                .font(.system(size: 20))
+                .font(.system(size: largeTextSize))
                 .padding()
             Text("Message Board")
                 .font(.system(size: mediumTextSize))

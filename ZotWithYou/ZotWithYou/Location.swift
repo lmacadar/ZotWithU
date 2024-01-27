@@ -14,9 +14,9 @@ struct Location: View{
     @State private var locationAddress: [String] = ["6318 Student Center Building, Irvine", "Inner Ring Road", "2005 Los Trancos Drive, Irvine", "4000 Mesa Road, Irvine", "1200 A Medical Education Building, Irvine", "215 Pereira Drive, Irvine", "113 Pereira Drive, Irvine", "311A Student Center, Irvine", "A233 Student Center Food Court, Irvine", "203 B Student Center, Irvine", "4255 Campus Drive, Irvine", "Phoenix Food Court, Irvine"]
     @State private var selectedLocation = ""
 
-    @State private var smallTextSize = 12 
-    @State private var mediumTextSize = 16 
-    @State private var largeTextSize = 16 
+    @State private var smallTextSize: Int = 12 
+    @State private var mediumTextSize: Int = 16 
+    @State private var largeTextSize: Int = 20 
 
     //luca you will edit the empty texts with descriptions, I labeled it "reallyblank" for easy search
     //luca you will also add images into "alsoblank"
@@ -40,6 +40,7 @@ struct Location: View{
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
         //-------------------------------------------------------------
+
 
         }
         .padding()
