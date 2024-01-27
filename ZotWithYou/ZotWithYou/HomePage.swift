@@ -10,8 +10,11 @@ import SwiftUI
 
 struct HomePage: View{
 
-    @State private var isWelcomeVisible = false
+    @State private var isWelcomeVisible = true
     @State private var welcomeMessage = "Welcome!"
+    
+    @State private var blockButtonText: String = "Block"
+    @State private var isBlocked: Bool = false
     
     var body: some View{
         VStack{
@@ -23,7 +26,6 @@ struct HomePage: View{
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .onAppear(){
-                            showWelcome()
                             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0){
                                 hideWelcome()
                             }
@@ -36,7 +38,17 @@ struct HomePage: View{
         Text("Hello World")
             .background(Color.blue)
     }
-    
+    /*
+    Button(blockButtonText) {
+        if(isBlocked == false){
+            blockButtonText = "Unblock"
+            isBlocked = true
+        }else{
+            blockButtonText = "Block"
+            isBlocked = false
+        }
+    }
+    */
     private func showWelcome(){
         isWelcomeVisible = true
     }
@@ -46,3 +58,4 @@ struct HomePage: View{
     }
     
 }
+
