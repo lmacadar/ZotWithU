@@ -159,10 +159,10 @@ struct Location: View{
 
             //omar mess with the time and make sure timeSelected variable is used with button
             
-            //Button("Confirm \(time)"){
+            Button("Confirm \(time)"){
                 
             }
         }
         //.padding()
     }
-
+}
