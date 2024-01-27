@@ -53,11 +53,10 @@ struct ContentView: signUpPage {
 	            .frame(width: 200, height: 40) 
             SecureField("Retype your password", text: $passwordRetyped) //passwordRetyped
 	            .frame(width: 200, height: 40) 
-
+            
             Button(signUpText) {
                 if(password == passwordRetyped){
                     var newUser = User(name: name, email: email, password: password)
-                    navigatetoHomePage = true
                 }else{
                     signUpText = "Your passwords do not match."
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
