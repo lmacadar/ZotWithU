@@ -39,13 +39,44 @@ struct Profile: View{
                 }
                 
             }
-            
-            if !isWelcomeVisible{
+            /*
+            if !isWelcomeVisible{ //after welcome is gone
                 TextField("Enter tags", text: $tag) //tag
                     .frame(width: 200, height: 40)
+                
+                Button("Add Tag"){
+                    addItem()
+                }
+                .padding()
             }
+            
+            ForEach(tagList, id: \.self){
+                tag in Text(tag)
+            }
+            
+            Button("Print Contents"){
+                print(tagList)
+            }
+            */
+                
         }
-        .padding()
+        .overlay(
+                       Rectangle()
+                           .frame(height: 8) // Adjust the height of the top purple margin
+                           .foregroundColor(Color.yellow)
+                           .edgesIgnoringSafeArea(.top) // Make sure it covers the top safely
+
+                       , alignment: .top
+        )
+        .overlay(
+                       Rectangle()
+                           .frame(height: 8) // Adjust the height of the top purple margin
+                           .foregroundColor(Color.yellow)
+                           .edgesIgnoringSafeArea(.top) // Make sure it covers the top safely
+
+                       , alignment: .bottom
+        )
+        //.padding(.vertical, 70)
         
         Text("Hello World")
             .background(Color.blue)
@@ -70,5 +101,10 @@ struct Profile: View{
         isWelcomeVisible = false
     }
     
+    private func addItem(){
+        tagList.append(tag)
+        
+        tag = ""
+    }
 }
 
