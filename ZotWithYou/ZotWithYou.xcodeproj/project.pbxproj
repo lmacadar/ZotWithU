@@ -97,12 +97,12 @@
 		E589812B2B64AE7B0041D3D8 /* ZotWithYou */ = {
 			isa = PBXGroup;
 			children = (
+				EB23139B2B65729B00464857 /* HomePage.swift */,
 				E589812C2B64AE7B0041D3D8 /* ZotWithYouApp.swift */,
 				E589812E2B64AE7B0041D3D8 /* ContentView.swift */,
 				E58981302B64AE7E0041D3D8 /* Assets.xcassets */,
 				E58981352B64AE7E0041D3D8 /* ZotWithYou.entitlements */,
 				E58981322B64AE7E0041D3D8 /* Preview Content */,
-				EB23139B2B65729B00464857 /* HomePage.swift */,
 			);
 			path = ZotWithYou;
 			sourceTree = "<group>";
