@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: signUpPage {
 
     private class User{
         var name: String = ""
@@ -30,7 +30,15 @@ struct ContentView: View {
     @State private var blockButtonText: String = "Block"
     @State private var isBlocked: Bool = false
 
+    @State private var navigatetoHomePage = false
+
     var body: some View {
+        NavigationLink{
+            destination: HomePage(),
+            isActive: $navigatetoHomePage
+        } {
+            EmptyView()
+        }
         VStack {
             Image(systemName: "globe")
                 //.imageScale(.large)
@@ -49,6 +57,7 @@ struct ContentView: View {
             Button(signUpText) {
                 if(password == passwordRetyped){
                     var newUser = User(name: name, email: email, password: password)
+                    navigatetoHomePage = true
                 }else{
                     signUpText = "Your passwords do not match."
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
@@ -56,6 +65,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationTitle("Home")
 
             Button(blockButtonText) {
                 if(isBlocked == false){
@@ -70,7 +80,9 @@ struct ContentView: View {
         }
         .padding()
     }
+
 }
+
 
 #Preview {
     ContentView()
