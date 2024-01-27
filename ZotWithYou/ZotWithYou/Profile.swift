@@ -1,5 +1,5 @@
 //
-//  HomePage.swift
+//  Profile.swift
 //  ZotWithYou
 //
 //  Created by Kenrich Huynh on 1/27/24.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct HomePage: View{
+struct Profile: View{
 
     @State private var isWelcomeVisible = true
     @State private var welcomeMessage = "Welcome!"
@@ -16,10 +16,16 @@ struct HomePage: View{
     @State private var blockButtonText: String = "Block"
     @State private var isBlocked: Bool = false
     
+    @State private var tagList: [String] = []
+    @State private var tag: String = ""
+    @State private var newAccount = true
+    
+    
     var body: some View{
         VStack{
+            Color.blue
             if isWelcomeVisible {
-                withAnimation(.easeInOut(duration: 0.3)){
+                withAnimation(.easeInOut(duration: 0.5)){
                     Text(welcomeMessage)
                         .padding()
                         .background(Color.blue)
@@ -33,10 +39,17 @@ struct HomePage: View{
                 }
                 
             }
+            
+            if !isWelcomeVisible{
+                TextField("Enter tags", text: $tag) //tag
+                    .frame(width: 200, height: 40)
+            }
         }
+        .padding()
         
         Text("Hello World")
             .background(Color.blue)
+        
     }
     /*
     Button(blockButtonText) {
