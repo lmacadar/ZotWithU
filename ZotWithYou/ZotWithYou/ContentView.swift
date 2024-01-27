@@ -33,12 +33,15 @@ struct ContentView: View {
     @State private var navigatetoHomePage = false
 
     var body: some View {
-        NavigationLink(
-            destination: HomePage(),
-            isActive: $navigatetoHomePage
-         ) {
-            EmptyView()
+        NavigationView {
+            NavigationLink(
+                destination: HomePage(),
+                isActive: $navigatetoHomePage
+             ) {
+                EmptyView()
+            }
         }
+        
         VStack {
             Image(systemName: "globe")
                 //.imageScale(.large)
