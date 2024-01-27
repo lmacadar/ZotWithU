@@ -14,6 +14,7 @@
 		E589813F2B64AE7E0041D3D8 /* ZotWithYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589813E2B64AE7E0041D3D8 /* ZotWithYouTests.swift */; };
 		E58981492B64AE7E0041D3D8 /* ZotWithYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58981482B64AE7E0041D3D8 /* ZotWithYouUITests.swift */; };
 		E589814B2B64AE7E0041D3D8 /* ZotWithYouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589814A2B64AE7E0041D3D8 /* ZotWithYouUITestsLaunchTests.swift */; };
+		E5A9D4F22B65B033002B5756 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9D4F12B65B033002B5756 /* Location.swift */; };
 		E5C0772F2B65A1E200A42801 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C0772E2B65A1E200A42801 /* Settings.swift */; };
 		E5C077312B65A20700A42801 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C077302B65A20700A42801 /* Explore.swift */; };
 		EB23139C2B65729B00464857 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23139B2B65729B00464857 /* Profile.swift */; };
@@ -48,6 +49,7 @@
 		E58981442B64AE7E0041D3D8 /* ZotWithYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZotWithYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58981482B64AE7E0041D3D8 /* ZotWithYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotWithYouUITests.swift; sourceTree = "<group>"; };
 		E589814A2B64AE7E0041D3D8 /* ZotWithYouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotWithYouUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5A9D4F12B65B033002B5756 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E5C0772E2B65A1E200A42801 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E5C077302B65A20700A42801 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		EB23139B2B65729B00464857 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				E5C077302B65A20700A42801 /* Explore.swift */,
 				E589812C2B64AE7B0041D3D8 /* ZotWithYouApp.swift */,
 				E589812E2B64AE7B0041D3D8 /* ContentView.swift */,
+				E5A9D4F12B65B033002B5756 /* Location.swift */,
 				E58981302B64AE7E0041D3D8 /* Assets.xcassets */,
 				E58981352B64AE7E0041D3D8 /* ZotWithYou.entitlements */,
 				E58981322B64AE7E0041D3D8 /* Preview Content */,
@@ -272,6 +275,7 @@
 				EB23139C2B65729B00464857 /* Profile.swift in Sources */,
 				E5C077312B65A20700A42801 /* Explore.swift in Sources */,
 				E5C0772F2B65A1E200A42801 /* Settings.swift in Sources */,
+				E5A9D4F22B65B033002B5756 /* Location.swift in Sources */,
 				E589812D2B64AE7B0041D3D8 /* ZotWithYouApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
