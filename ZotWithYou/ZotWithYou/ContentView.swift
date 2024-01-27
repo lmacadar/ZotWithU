@@ -13,7 +13,9 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TextField("Enter your name", text: $name)
+            TextField("Enter your email", text: $email)
+            SecureField("Enter your password", text: $password)
         }
         .padding()
     }
