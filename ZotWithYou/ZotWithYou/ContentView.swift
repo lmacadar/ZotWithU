@@ -27,15 +27,12 @@ struct ContentView: View {
 
     @State private var signUpText: String = "Sign up!"
 
-    @State private var blockButtonText: String = "Block"
-    @State private var isBlocked: Bool = false
-
     @State private var navigatetoProfile = false
 
     var body: some View {
         NavigationView {
             NavigationLink(
-                destination: Profie(),
+                destination: Profile(),
                 isActive: $navigatetoProfile
              ) {
                 EmptyView()
@@ -69,17 +66,6 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Profile")
-
-            Button(blockButtonText) {
-                if(isBlocked == false){
-                    blockButtonText = "Unblock"
-                    isBlocked = true
-                }else{
-                    blockButtonText = "Block"
-                    isBlocked = false
-                }
-            }
-            
         }
         .padding()
     }
