@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ZotWithYouApp: App {
+    
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }

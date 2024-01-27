@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Settings: View {
+   // @EnvironmentObject var router: TabRouter
+    
+    var body: some View {
+        Text("Settings")
+    }
+}
+
+

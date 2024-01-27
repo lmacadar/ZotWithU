@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Explore: View {
+    
+    var body: some View {
+        Text("Explore")
+    }
+}
+

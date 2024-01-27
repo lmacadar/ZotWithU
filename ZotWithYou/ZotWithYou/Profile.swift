@@ -79,7 +79,15 @@ struct Profile: View{
         //.padding(.vertical, 70)
         
         TabView {
-            
+            Settings()
+                .badge(10)
+                .tabItem {
+                    Label("Settings", systemImage: "pencil.circle")
+                }
+            Explore()
+                .tabItem {
+                    Label("Explore", systemImage: "arrowtriangle.left.square")
+                }
         }
         
         Text("Hello World")
