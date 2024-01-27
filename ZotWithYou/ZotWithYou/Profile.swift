@@ -64,6 +64,11 @@ struct Profile: View{
         //.padding(.vertical, 70)
         
         TabView {
+            RealProfile()
+                .badge(1)
+                .tabItem {
+                    Label("Profile", systemImage: "square.fill")
+                }
             Settings()
                 .badge(10)
                 .tabItem {
