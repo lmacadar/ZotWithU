@@ -31,19 +31,27 @@ struct Profile: View{
                     }
                     .toolbarBackground(Color.yellow, for: .tabBar)
                     .toolbarBackground(.visible, for: .tabBar)
-                Settings()
-                    .badge(10)
-                    .tabItem {
-                        Label("Settings", systemImage: "pencil.circle")
-                    }
-                    .toolbarBackground(Color.yellow, for: .tabBar)
-                    .toolbarBackground(.visible, for: .tabBar)
                 Explore()
+                    .badge(10)
                     .tabItem {
                         Label("Explore", systemImage: "arrowtriangle.left.square")
                     }
                     .toolbarBackground(Color.yellow, for: .tabBar)
                     .toolbarBackground(.visible, for: .tabBar)
+                Chat()
+                    .tabItem {
+                        Label("Messages", systemImage: "pencil.circle")
+                    }
+                    .toolbarBackground(Color.yellow, for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
+                Settings()
+                    .tabItem {
+                        Label("Settings", systemImage: "pencil.circle")
+                    }
+                    .toolbarBackground(Color.yellow, for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
+                
+                
 
             }
             .offset(y: -10)

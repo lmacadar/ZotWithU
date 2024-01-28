@@ -31,43 +31,69 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            
-            
-            VStack {
-                NavigationLink(
-                    destination: Profile(),
-                    isActive: $navigatetoProfile
-                 ) {
-                    EmptyView()
-                }
-                Image(systemName: "globe")
-                    //.imageScale(.large)
-                    .foregroundStyle(.tint)
-                    .aspectRatio(contentMode: .fill) //images to fill
+            ZStack {
+                Color.yellow
+                    .ignoresSafeArea()
+                Circle()
+                    .scale(1.6)
+                    .foregroundColor(.white.opacity(0.15))
+                    .position(x: 60, y: 100)
+                Circle()
+                    .scale(1.6)
+                    .foregroundColor(.white.opacity(0.15))
+                    .position(x: 30, y: 100)
+                Circle()
+                    .scale(1.6)
+                    .foregroundColor(.white.opacity(0.15))
+                    .position(x: 0, y: 100)
+                Circle()
+                    .scale(1.6)
+                    .foregroundColor(.white.opacity(0.15))
+                    .position(x: -30, y: 100)
+                Circle()
+                    .scale(1.6)
+                    .foregroundColor(.white.opacity(0.15))
+                    .position(x: -60, y: 100)
+                Circle()
+                    .scale(1.35)
+                    .foregroundColor(.white)
+                VStack {
+                    Text("ZotWithU")
+                        .bold()
+                        .font(.system(size: CGFloat(30)))
+                        
+                    NavigationLink(
+                        destination: Profile(),
+                        isActive: $navigatetoProfile
+                     ) {
+                        EmptyView()
+                    }
+                    
+                    TextField("Enter your name", text: $name) //name
+                        .frame(width: 200, height: 40)
+                    TextField("Enter your email", text: $email) //email
+                        .frame(width: 200, height: 40)
+                    SecureField("Enter your password", text: $password) //password
+                        .frame(width: 200, height: 40)
+                    SecureField("Retype your password", text: $passwordRetyped) //passwordRetyped
+                        .frame(width: 200, height: 40)
 
-                TextField("Enter your name", text: $name) //name
-                    .frame(width: 200, height: 40)
-                TextField("Enter your email", text: $email) //email
-                    .frame(width: 200, height: 40)
-                SecureField("Enter your password", text: $password) //password
-                    .frame(width: 200, height: 40)
-                SecureField("Retype your password", text: $passwordRetyped) //passwordRetyped
-                    .frame(width: 200, height: 40)
-
-                Button(signUpText) {
-                    if(password == passwordRetyped){
-                        var newUser = User(name: name, email: email, password: password)
-                        navigatetoProfile = true
-                    }else{
-                        signUpText = "Your passwords do not match."
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            signUpText = "Sign up!"
+                    Button(signUpText) {
+                        if(password == passwordRetyped){
+                            var newUser = User(name: name, email: email, password: password)
+                            navigatetoProfile = true
+                        }else{
+                            signUpText = "Your passwords do not match."
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                signUpText = "Sign up!"
+                            }
                         }
                     }
+                    .navigationTitle("")
                 }
-                .navigationTitle("")                
+                .padding()
             }
-            .padding()
+            
             
         }
         

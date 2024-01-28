@@ -16,6 +16,7 @@
 		E589814B2B64AE7E0041D3D8 /* ZotWithYouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589814A2B64AE7E0041D3D8 /* ZotWithYouUITestsLaunchTests.swift */; };
 		E5A9D4F22B65B033002B5756 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9D4F12B65B033002B5756 /* Location.swift */; };
 		E5A9D4F42B65B342002B5756 /* RealProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9D4F32B65B342002B5756 /* RealProfile.swift */; };
+		E5A9D4F62B65FC4E002B5756 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9D4F52B65FC4E002B5756 /* Reader.swift */; };
 		E5C0772F2B65A1E200A42801 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C0772E2B65A1E200A42801 /* Settings.swift */; };
 		E5C077312B65A20700A42801 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C077302B65A20700A42801 /* Explore.swift */; };
 		EB23139C2B65729B00464857 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23139B2B65729B00464857 /* Profile.swift */; };
@@ -54,6 +55,7 @@
 		E589814A2B64AE7E0041D3D8 /* ZotWithYouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZotWithYouUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E5A9D4F12B65B033002B5756 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E5A9D4F32B65B342002B5756 /* RealProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealProfile.swift; sourceTree = "<group>"; };
+		E5A9D4F52B65FC4E002B5756 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		E5C0772E2B65A1E200A42801 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E5C077302B65A20700A42801 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		EB23139B2B65729B00464857 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E5C077302B65A20700A42801 /* Explore.swift */,
 				E589812C2B64AE7B0041D3D8 /* ZotWithYouApp.swift */,
 				E589812E2B64AE7B0041D3D8 /* ContentView.swift */,
+				E5A9D4F52B65FC4E002B5756 /* Reader.swift */,
 				E5A9D4F12B65B033002B5756 /* Location.swift */,
 				E58981302B64AE7E0041D3D8 /* Assets.xcassets */,
 				E58981352B64AE7E0041D3D8 /* ZotWithYou.entitlements */,
@@ -282,6 +285,7 @@
 			files = (
 				E589812F2B64AE7B0041D3D8 /* ContentView.swift in Sources */,
 				EB99CE072B65C7B400F33F98 /* Club.swift in Sources */,
+				E5A9D4F62B65FC4E002B5756 /* Reader.swift in Sources */,
 				EB23139C2B65729B00464857 /* Profile.swift in Sources */,
 				E5C077312B65A20700A42801 /* Explore.swift in Sources */,
 				E5A9D4F42B65B342002B5756 /* RealProfile.swift in Sources */,
