@@ -8,56 +8,43 @@
 import Foundation
 import SwiftUI
 
-struct Reader: View{
+struct ContentView: View {
+    @State private var apiResponse: String? = nil
+    let apiUrl = "https://s750i8mq59.execute-api.us-east-2.amazonaws.com/default/ZotWithU-Test-Pull"
+    let apiReader = APIReader()
 
-    enum APIError: Error {
-        case invalidURL
-        case requestFailed
-        case invalidData
-    }
-
-    class APIReader {
-        func fetchData(from url: String, completion: @escaping (Result<String, APIError>) -> Void) {
-            guard let apiURL = URL(string: url) else {
-                completion(.failure(.invalidURL))
-                return
+    var body: some View {
+        VStack {
+            if let response = apiResponse {
+                // Display the fetched data
+                Text("API Response: \(response)")
+            } else {
+                // Show a loading indicator or placeholder while fetching data
+                Text("Loading...")
+                    .onAppear {
+                        fetchDataFromAPI()
+                    }
             }
-
-            let task = URLSession.shared.dataTask(with: apiURL) { (data, response, error) in
-                if let error = error {
-                    print("Error: \(error.localizedDescription)")
-                    completion(.failure(.requestFailed))
-                    return
-                }
-
-                guard let data = data, let content = String(data: data, encoding: .utf8) else {
-                    completion(.failure(.invalidData))
-                    return
-                }
-
-                completion(.success(content))
-            }
-
-            task.resume()
         }
     }
 
-    var body: some View{
-        VStack{
-            // Example usage
-            let apiReader = APIReader()
-            let apiUrl = "https://s750i8mq59.execute-api.us-east-2.amazonaws.com/default/ZotWithU-Test-Pull"
-
-            apiReader.fetchData(from: apiUrl) { result in
-                switch result {
-                case .success(let content):
-                    print("Received data:\n\(content)")
-
-                case .failure(let error):
-                    print("Error: \(error)")
+    func fetchDataFromAPI() {
+        apiReader.fetchData(from: apiUrl) { result in
+            switch result {
+            case .success(let content):
+                DispatchQueue.main.async {
+                    self.apiResponse = content
                 }
+
+            case .failure(let error):
+                print("Error: \(error)")
             }
         }
-        .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
