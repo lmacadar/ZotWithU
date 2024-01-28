@@ -23,7 +23,30 @@ struct Profile: View{
     
     var body: some View{
         VStack{
-            
+            TabView {
+                RealProfile()
+                    .badge(1)
+                    .tabItem {
+                        Label("Profile", systemImage: "square.fill")
+                    }
+                    .toolbarBackground(Color.yellow, for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
+                Settings()
+                    .badge(10)
+                    .tabItem {
+                        Label("Settings", systemImage: "pencil.circle")
+                    }
+                    .toolbarBackground(Color.yellow, for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
+                Explore()
+                    .tabItem {
+                        Label("Explore", systemImage: "arrowtriangle.left.square")
+                    }
+                    .toolbarBackground(Color.yellow, for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
+
+            }
+            .offset(y: -10)
             /*
             if !isWelcomeVisible{ //after welcome is gone
                 TextField("Enter tags", text: $tag) //tag
@@ -61,26 +84,6 @@ struct Profile: View{
 
                        , alignment: .bottom
         )
-        //.padding(.vertical, 70)
-        
-        TabView {
-            RealProfile()
-                .badge(1)
-                .tabItem {
-                    Label("Profile", systemImage: "square.fill")
-                }
-            Settings()
-                .badge(10)
-                .tabItem {
-                    Label("Settings", systemImage: "pencil.circle")
-                }
-            Explore()
-                .tabItem {
-                    Label("Explore", systemImage: "arrowtriangle.left.square")
-                }
-        }
-        
-        
         
     }
     /*

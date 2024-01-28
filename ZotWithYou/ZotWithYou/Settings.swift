@@ -28,37 +28,72 @@ struct Settings: View {
             
             Text("Settings")
             
-            TextField("Change your name", text: $name) //name
-                .frame(width: 200, height: 40)
-                .padding()
+            HStack{
+                Text(name)
+                    .font(.custom("San Francisco", size: 15))
+                    .padding()
+                    .background(Capsule()
+                        .fill(Color.yellow))
+                    .foregroundColor(.black)
+                    .cornerRadius(2)
+                
+                TextField("Change your name", text: $name) //name
+                    .frame(width: 175, height: 30)
+                    .font(.custom("San Francisco", size: 15))
+                    .padding()
+                    .background(Capsule()
+                        .fill(Color.yellow))
+                    .foregroundColor(.black)
+                    .cornerRadius(2)
+            }
             
-            TextField("Change your email", text: $email) //email
-                .frame(width: 200, height: 40)
-                .padding()
+            HStack{
+                Text(email)
+                    .font(.custom("San Francisco", size: 15))
+                    .padding()
+                    .background(Capsule()
+                        .fill(Color.yellow))
+                    .foregroundColor(.black)
+                    .cornerRadius(2)
+                
+                TextField("Change your email", text: $email) //email
+                    .frame(width: 175, height: 30)
+                    .font(.custom("San Francisco", size: 15))
+                    .padding()
+                    .background(Capsule()
+                        .fill(Color.yellow))
+                    .foregroundColor(.black)
+                    .cornerRadius(2)
+            }
             
             SecureField("Change your password", text: $password) //password
-                .frame(width: 200, height: 40)
-                .padding()
-            
-    
-            Button("Change Profile Picture"){}
+                .frame(width: 175, height: 30)
                 .font(.custom("San Francisco", size: 15))
                 .padding()
                 .background(Capsule()
                     .fill(Color.yellow))
                 .foregroundColor(.black)
                 .cornerRadius(2)
-                
-                    
             
-          
             
+            Button("Change Profile Picture"){}
+                .frame(width: 175, height: 30)
+                .font(.custom("San Francisco", size: 15))
+                .padding()
+                .background(Capsule()
+                    .fill(Color.yellow))
+                .foregroundColor(.black)
+                .cornerRadius(2)
+        
             Text("Delete Account")
                 .foregroundColor(Color.red)
-            
+                .offset(y: 10)
             
                 
         } //end of vstack
+        .offset(y: -20)
+    
+ 
   
     } //end of body
 
