@@ -50,14 +50,14 @@ struct Profile: View{
                     }
                     .toolbarBackground(Color.yellow, for: .tabBar)
                     .toolbarBackground(.visible, for: .tabBar)
-                
+                /*
                 Reader()
                     .tabItem {
                         Label("Reader", systemImage: "pencil.circle")
                     }
                     .toolbarBackground(Color.yellow, for: .tabBar)
                     .toolbarBackground(.visible, for: .tabBar)
-                
+                */
                 
 
             }
