@@ -27,44 +27,27 @@ struct Settings: View {
         VStack{
             
             Text("Settings")
+
             
-            HStack{
-                Text(name)
-                    .font(.custom("San Francisco", size: 15))
-                    .padding()
-                    .background(Capsule()
-                        .fill(Color.yellow))
-                    .foregroundColor(.black)
-                    .cornerRadius(2)
-                
-                TextField("Change your name", text: $name) //name
-                    .frame(width: 175, height: 30)
-                    .font(.custom("San Francisco", size: 15))
-                    .padding()
-                    .background(Capsule()
-                        .fill(Color.yellow))
-                    .foregroundColor(.black)
-                    .cornerRadius(2)
-            }
+            TextField("Change your name", text: $name) //name
+                .frame(width: 175, height: 30)
+                .font(.custom("San Francisco", size: 15))
+                .padding()
+                .background(Capsule()
+                    .fill(Color.yellow))
+                .foregroundColor(.black)
+                .cornerRadius(2)
+       
             
-            HStack{
-                Text(email)
-                    .font(.custom("San Francisco", size: 15))
-                    .padding()
-                    .background(Capsule()
-                        .fill(Color.yellow))
-                    .foregroundColor(.black)
-                    .cornerRadius(2)
-                
-                TextField("Change your email", text: $email) //email
-                    .frame(width: 175, height: 30)
-                    .font(.custom("San Francisco", size: 15))
-                    .padding()
-                    .background(Capsule()
-                        .fill(Color.yellow))
-                    .foregroundColor(.black)
-                    .cornerRadius(2)
-            }
+            TextField("Change your email", text: $email) //email
+                .frame(width: 175, height: 30)
+                .font(.custom("San Francisco", size: 15))
+                .padding()
+                .background(Capsule()
+                    .fill(Color.yellow))
+                .foregroundColor(.black)
+                .cornerRadius(2)
+        
             
             SecureField("Change your password", text: $password) //password
                 .frame(width: 175, height: 30)
