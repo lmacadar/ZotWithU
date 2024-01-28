@@ -67,8 +67,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[3]): \(locationAddress[3])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("A wonderful lounge area with a variety of drinks and plates.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[3])"){
                     selectedLocation = "\(locationName[3])"
                 }

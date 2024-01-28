@@ -40,15 +40,19 @@ struct Chat: View{
     @State private var headerText: String = "Invite Page"
     @State private var displayedText: String = "Invite List:\n"
     @State private var shouldShowButton: Bool = false
+    @State private var headerTextTwo: String = ""
 
     var body: some View{
         VStack{
             Text(headerText)
+            Text(headerTextTwo)
             Button("See Invites"){
                 if((inviteList.isEmpty == true)){
-                    headerText = ("No Invites found.\nWhy don't you start a group?")
+                    headerText = ("No Invites found.")
+                    headerTextTwo = "Why don't you start a group?"
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                             headerText = "Invite Page"
+                            headerTextTwo = ""
                     }
                 }else{
                     shouldShowButton = true
