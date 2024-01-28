@@ -61,6 +61,7 @@
 		EB23139B2B65729B00464857 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		EB99CE042B65C6B200F33F98 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		EB99CE062B65C7B400F33F98 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		EB99CE082B66121C00F33F98 /* ReaderPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReaderPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 				E58981302B64AE7E0041D3D8 /* Assets.xcassets */,
 				E58981352B64AE7E0041D3D8 /* ZotWithYou.entitlements */,
 				E58981322B64AE7E0041D3D8 /* Preview Content */,
+				EB99CE082B66121C00F33F98 /* ReaderPlayground.playground */,
 			);
 			path = ZotWithYou;
 			sourceTree = "<group>";
