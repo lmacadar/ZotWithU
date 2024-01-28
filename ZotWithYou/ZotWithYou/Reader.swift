@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Reader: View{
+    var body: some View {
+        Text("this is reader")
+    }
+}
