@@ -22,6 +22,7 @@ struct Explore: View {
                 Text("Explore")
                 
                 Text("\(locationName[0]): \(locationAddress[0])")
+                Image("Locations 1/einstein bagel")
                 Text("Description: ")
                 Text("reallyblank")
                 Button("Select: \(locationName[0])"){
