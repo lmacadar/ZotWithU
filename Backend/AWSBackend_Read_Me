@@ -1,1 +1,4 @@
 This section of the code belongs to python files held on AWS Lambda. The files are added here for record-keeping.
+
+A majority of the time spent for this project was figuring out how to set up the backend correctly. We successfully managed to set up DynamoDB and all the Lambda function links that would have been used in the fully working product.
+Due to not figuring out how to connect client-side and api-side endpoints (specifically, how to send a link with a payload) we weren't successful within the scope of the Hackathon. However, this project will be continued.
