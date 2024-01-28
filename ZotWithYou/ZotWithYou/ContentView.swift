@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+var globName: String = ""
+
 struct ContentView: View {
 
     private class User{
@@ -18,6 +20,7 @@ struct ContentView: View {
             self.name = name
             self.email = email
             self.password = password
+            globName = name
         }
     }
     @State private var name: String = ""

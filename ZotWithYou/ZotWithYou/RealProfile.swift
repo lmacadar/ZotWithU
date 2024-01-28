@@ -21,7 +21,7 @@ struct RealProfile: View {
                     .frame(width: 50, height: 50)
                     
                     .clipShape(Circle())
-                Text("Name: ")
+                Text(globName)
                 Text("Major: ")
                 
                 HStack (spacing: CGFloat(space)) {
