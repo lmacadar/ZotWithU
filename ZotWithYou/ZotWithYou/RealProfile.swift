@@ -5,8 +5,10 @@
 //  Created by Omar Abou-Harb on 1/27/24.
 //
 
+
 import Foundation
 import SwiftUI
+
 
 struct RealProfile: View {
    // @EnvironmentObject var router: TabRouter
@@ -35,7 +37,7 @@ struct RealProfile: View {
                                        false, false, false, false, false
     ]
     @State var isBold = false
-    
+   
     let fontsize = 10
     let space = 8
     var body: some View {
@@ -47,7 +49,7 @@ struct RealProfile: View {
                         .font(.system(size: 34))
                         .bold()
                 }
-                
+               
                 HStack {
                     Text("  ")
                     Image("blankprofile")
@@ -55,35 +57,33 @@ struct RealProfile: View {
                         .frame(width: 50, height: 50)
                         .clipShape(Circle())
                 }
-                
+               
                 HStack {
                     Text("  ")
                     Text(globName)
                 }
-                
+               
                 HStack {
                     Text("  ")
                     Text("Major: ")
                 }
                
-                
-                
+               
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
+                       
+                    }
+                   
+                    Button(action:{
+                        isBoldArray[0].toggle()
+                    }){
+                        Text("Accounting")
+                            .bold(isBoldArray[0])
                         
                     }
-                    
-                    Button(action:{
-                    }){
-                        Text("Accounting 🧾")
-                            .bold(isBoldArray[0])
-                    }
-                    .onLongPressGesture(minimumDuration: 0.1, maximumDistance: 10, pressing: { pressing in
-                        isBoldArray[0] = pressing
-                    }) {
-                        //nothing
-                    }
-    
+  
+   
                     Button(action:{
                     }){
                         Text("Aerospace Eng 🚀")
@@ -94,7 +94,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Anthropology 🧑")
@@ -105,7 +105,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Physics 🧲")
@@ -116,7 +116,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Art 🎨")
@@ -127,15 +127,15 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("BioChem 🧬")
@@ -146,7 +146,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Bio 🔬")
@@ -157,7 +157,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Business 💰")
@@ -168,7 +168,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Econ 📈")
@@ -179,7 +179,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Chem 🧪")
@@ -190,16 +190,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-        
+                   
+       
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Gender Studies 🏳️‍⚧️")
@@ -210,7 +210,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("CS 🖥️")
@@ -221,7 +221,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Criminology 🚓")
@@ -232,7 +232,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Dance 💃")
@@ -243,7 +243,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Drama 🎭")
@@ -254,22 +254,22 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
      
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
-                
+               
+               
                 HStack {
                     Text("  ")
                     Text("Interests: ")
                 }
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Coffee ☕️")
@@ -280,7 +280,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Tea 🧋")
@@ -291,7 +291,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Anime 🇯🇵")
@@ -302,7 +302,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Gaming 🎮")
@@ -313,7 +313,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Cosplay 🎽")
@@ -324,15 +324,15 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Soccer ⚽️")
@@ -343,7 +343,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Rock 🤘")
@@ -354,7 +354,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Pop 🎤")
@@ -365,7 +365,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Country 🌽")
@@ -376,7 +376,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Electronica 🎛️")
@@ -387,42 +387,42 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button("Soccer ⚽️") {
-        
+       
                     }
                     Button("Rock 🤘") {
-                        
+                       
                     }
                     Button("Pop 🎤") {
-                        
+                       
                     }
                     Button("Country 🎛️") {
-                        
+                       
                     }
                     Button("Electronica 🎛️") {
-                        
+                       
                     }
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
                     Button("Plushies 🧸") {
-                        
+                       
                     }
-                    
+                   
            
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Acting 🧸")
@@ -433,7 +433,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Dancing 💃")
@@ -444,7 +444,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Instruments 🐛")
@@ -455,7 +455,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Yoga 🎨")
@@ -466,7 +466,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Calisthenics 🪴")
@@ -477,16 +477,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                    
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Fishing 🎣")
@@ -497,7 +497,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Cycling 🚴‍♀️")
@@ -508,7 +508,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Chess ♟️")
@@ -519,7 +519,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Archery 🏹")
@@ -530,7 +530,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Fencing 🤺")
@@ -541,16 +541,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-                  
+                   
+                 
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Martial Arts 🥋")
@@ -561,7 +561,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Surfing 🏄")
@@ -572,7 +572,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Rock Climbing 🧗")
@@ -583,7 +583,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Skiing ⛷️")
@@ -594,7 +594,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Swim 🏊")
@@ -605,16 +605,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-      
+                   
+     
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Caligraphy ✒️")
@@ -625,7 +625,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Skydiving 🪂")
@@ -636,7 +636,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Sailing ⛵")
@@ -647,7 +647,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Canoeing 🛶")
@@ -658,7 +658,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Cars 🚗")
@@ -669,16 +669,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                    
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Partying 🎉")
@@ -689,7 +689,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Pilates ✍️")
@@ -700,7 +700,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Crossfit 🤸‍♀️")
@@ -711,7 +711,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Lifting 🏋️")
@@ -722,7 +722,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Eating 🍴")
@@ -733,16 +733,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-                  
+                   
+                 
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Pub Hopping 🍺")
@@ -753,7 +753,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Nerd 🤓")
@@ -764,7 +764,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Tennis 🎾")
@@ -775,7 +775,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Workaholic 👨‍⚕️")
@@ -786,7 +786,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Puzzles 🧩")
@@ -797,16 +797,17 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
+
 
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Podcasts 🎙️")
@@ -817,7 +818,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Apple 🍎")
@@ -828,7 +829,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Android 🐛")
@@ -839,7 +840,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Tech 🖥️")
@@ -850,7 +851,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("PS5 🪴")
@@ -861,17 +862,17 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-              
+                   
+             
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
-                
+               
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Xbox 🧸")
@@ -882,7 +883,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Nintendo ✍️")
@@ -893,7 +894,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Violin 🎻")
@@ -904,7 +905,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Piano 🎹")
@@ -915,7 +916,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Guitar 🎸")
@@ -926,16 +927,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-        
+                   
+       
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Flute 🪈")
@@ -946,7 +947,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Audiophile 🎧")
@@ -957,7 +958,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Otamatone 🐛")
@@ -968,7 +969,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Acapella 🧑‍🎤")
@@ -979,7 +980,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Comedy 😂")
@@ -990,16 +991,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                    
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Horror 👻")
@@ -1010,7 +1011,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Action 💥")
@@ -1021,7 +1022,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Sci-fi 👽")
@@ -1032,7 +1033,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Fantasy 🧙")
@@ -1043,7 +1044,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Western 🤠")
@@ -1054,16 +1055,17 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
+
 
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Crime 👮")
@@ -1074,7 +1076,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Romanace ❤️")
@@ -1085,7 +1087,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Drama 🎭")
@@ -1096,7 +1098,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Accordion 🪗")
@@ -1107,7 +1109,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Trumpet 🎺")
@@ -1118,18 +1120,19 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-                
+                   
+               
+
 
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
-                
+               
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Drums 🥁")
@@ -1140,7 +1143,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Republican 🐘")
@@ -1151,7 +1154,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Democrat 🫏")
@@ -1162,7 +1165,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Libertarian 🦔")
@@ -1173,7 +1176,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Independent 🇺🇸")
@@ -1184,16 +1187,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
          
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Green 🌼")
@@ -1204,7 +1207,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Activism ✊")
@@ -1215,7 +1218,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Journalism 📓")
@@ -1226,7 +1229,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Camping ⛺️")
@@ -1237,7 +1240,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Football 🏈")
@@ -1248,16 +1251,16 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-  
+                   
+ 
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
+               
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
-                        
+                       
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Basketball 🏀")
@@ -1268,7 +1271,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-    
+   
                     Button(action:{
                     }){
                         Text("Cross-Country 🏃")
@@ -1279,7 +1282,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Golf ⛳")
@@ -1290,7 +1293,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Skating 🎨")
@@ -1301,7 +1304,7 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
+                   
                     Button(action:{
                     }){
                         Text("Hiking 🪴")
@@ -1312,15 +1315,17 @@ struct RealProfile: View {
                     }) {
                         //nothing
                     }
-                    
-        
+                   
+       
                 } .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: CGFloat(fontsize)))
-                
-                
+               
+               
             }
         }
-        
-        
+       
+       
     }
 }
+
+
