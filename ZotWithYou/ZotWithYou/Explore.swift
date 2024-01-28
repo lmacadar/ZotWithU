@@ -13,7 +13,7 @@ struct Explore: View {
     @State private var locationName: [String] = ["Einstein Bros. Bagels", "Phoenix Food Court", "Java City Coffee", "Green Room", "Med Ed Cafe", "Anthill Pub & Grille", "Bento Sushi", "Jamba Juice", "Subway", "Starbucks (Student Center)", "Starbucks (Paul Merage)", "Tortilla Fresca"]
     @State private var locationAddress: [String] = ["6318 Student Center Building, Irvine", "Inner Ring Road", "2005 Los Trancos Drive, Irvine", "4000 Mesa Road, Irvine", "1200 A Medical Education Building, Irvine", "215 Pereira Drive, Irvine", "113 Pereira Drive, Irvine", "311A Student Center, Irvine", "A233 Student Center Food Court, Irvine", "203 B Student Center, Irvine", "4255 Campus Drive, Irvine", "Phoenix Food Court, Irvine"]
     @State private var selectedLocation = ""
-    
+    private var descriptionFont = 10
     
     var body: some View {
         ScrollView {
@@ -25,8 +25,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[0]): \(locationAddress[0])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("Although they are known for their bagels, they offer breakfast sandwiches, lunch sandwiches, coffee, catering, and more.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[0])"){
                     selectedLocation = "\(locationName[0])"
                 }
@@ -39,8 +39,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[1]): \(locationAddress[1])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("A fine dining Chinese restaurant.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[1])"){
                     selectedLocation = "\(locationName[1])"
                 }
@@ -53,8 +53,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[2]): \(locationAddress[2])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text(" They serve farmer and environmentally friendly coffee.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[2])"){
                     selectedLocation = "\(locationName[2])"
                 }
@@ -81,8 +81,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[4]): \(locationAddress[4])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("Proudly serves hand-crafted Starbucks beverages.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[4])"){
                     selectedLocation = "\(locationName[4])"
                 }
@@ -94,8 +94,8 @@ struct Explore: View {
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
                 Text("\(locationName[5]): \(locationAddress[5])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("With a variety of options, good conversation meets great food and delicious drinks!")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[5])"){
                     selectedLocation = "\(locationName[5])"
                 }
@@ -107,8 +107,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[6]): \(locationAddress[6])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("Pre-packaged Sushi- Ready To Go!")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[6])"){
                     selectedLocation = "\(locationName[6])"
                 }
@@ -121,8 +121,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[7]): \(locationAddress[7])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("Known for their delicious smoothies and juices.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[7])"){
                     selectedLocation = "\(locationName[7])"
                 }
@@ -135,8 +135,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[8]): \(locationAddress[8])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("Known for their customizable sandwiches with fresh ingredients.")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[8])"){
                     selectedLocation = "\(locationName[8])"
                 }
@@ -149,8 +149,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[9]): \(locationAddress[9])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("A place to get coffee, refreshments, snacks, and hang out with free internet!")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[9])"){
                     selectedLocation = "\(locationName[9])"
                 }
@@ -163,8 +163,8 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[10]): \(locationAddress[10])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("A place to get coffee, refreshments, snacks, and hang out with free internet!")
+                    .font(.system(size: CGFloat(descriptionFont)))
                 Button("Select: \(locationName[10])"){
                     selectedLocation = "\(locationName[10])"
                 }
@@ -177,8 +177,9 @@ struct Explore: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text("\(locationName[11]): \(locationAddress[11])")
-                Text("Description: ")
-                Text("reallyblank")
+                Text("A place to get fresh tortillas and other Spanish foods.")
+                    .font(.system(size: CGFloat(descriptionFont)))
+
                 Button("Select: \(locationName[11])"){
                     selectedLocation = "\(locationName[11])"
                 }
