@@ -16,13 +16,15 @@ struct Explore: View {
     @State private var selectedTime = ""
     
     var body: some View {
-        
         ScrollView {
             VStack{
+                
                 Text("Explore")
                 
+                Image("Einstein Bagel")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[0]): \(locationAddress[0])")
-                Image("Locations 1/einstein bagel")
                 Text("Description: ")
                 Text("reallyblank")
                 Button("Select: \(locationName[0])"){
@@ -33,6 +35,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Phoenix Court")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[1]): \(locationAddress[1])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -44,6 +49,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Java City")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[2]): \(locationAddress[2])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -55,6 +63,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Green Room")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[3]): \(locationAddress[3])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -66,13 +77,18 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Cafe Med")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[4]): \(locationAddress[4])")
                 Text("Description: ")
                 Text("reallyblank")
                 Button("Select: \(locationName[4])"){
                     selectedLocation = "\(locationName[4])"
                 }
-                Image(systemName: "alsoblank")
+                Image("Anthill Pub and Eatery")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 //.imageScale(.large)
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
@@ -83,11 +99,13 @@ struct Explore: View {
                 Button("Select: \(locationName[5])"){
                     selectedLocation = "\(locationName[5])"
                 }
-                Image(systemName: "alsoblank")
                 //.imageScale(.large)
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Bento Sushi")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[6]): \(locationAddress[6])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -99,6 +117,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Jamba Juice")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[7]): \(locationAddress[7])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -110,6 +131,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Subway")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[8]): \(locationAddress[8])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -121,6 +145,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Starbucks")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[9]): \(locationAddress[9])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -132,6 +159,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Starbucks")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[10]): \(locationAddress[10])")
                 Text("Description: ")
                 Text("reallyblank")
@@ -143,6 +173,9 @@ struct Explore: View {
                 //.foregroundStyle(.tint)
                 //.aspectRatio(contentMode: .fill) //images to fill
                 //-------------------------------------------------------------
+                Image("Tortilla Fresca")
+                    .resizable()
+                    .frame(width: 100, height: 100)
                 Text("\(locationName[11]): \(locationAddress[11])")
                 Text("Description: ")
                 Text("reallyblank")
