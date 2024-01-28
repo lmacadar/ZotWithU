@@ -1,5 +1,5 @@
 //
-//  Club.swift
+//  Location.swift
 //  ZotWithYou
 //
 //  Created by Alexander Tran on 1/27/24.
