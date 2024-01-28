@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 struct Explore: View {
-    
+    @State private var selectedTime = Date()
     @State private var locationName: [String] = ["Einstein Bros. Bagels", "Phoenix Food Court", "Java City Coffee", "Green Room", "Med Ed Cafe", "Anthill Pub & Grille", "Bento Sushi", "Jamba Juice", "Subway", "Starbucks (Student Center)", "Starbucks (Paul Merage)", "Tortilla Fresca"]
     @State private var locationAddress: [String] = ["6318 Student Center Building, Irvine", "Inner Ring Road", "2005 Los Trancos Drive, Irvine", "4000 Mesa Road, Irvine", "1200 A Medical Education Building, Irvine", "215 Pereira Drive, Irvine", "113 Pereira Drive, Irvine", "311A Student Center, Irvine", "A233 Student Center Food Court, Irvine", "203 B Student Center, Irvine", "4255 Campus Drive, Irvine", "Phoenix Food Court, Irvine"]
     @State private var selectedLocation = ""
-    @State private var selectedTime = ""
+    
     
     var body: some View {
         ScrollView {
@@ -191,11 +191,12 @@ struct Explore: View {
                 //-------------------------------------------------------------
                 Text("Select a time for \(selectedLocation)")
                 
-                //omar mess with the time and make sure timeSelected variable is used with button
+                HStack {
+                    Text("             ")
+                    DatePicker("Select Time:", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                    Text("             ")
+                }
                 
-                /*Button("Confirm \(time)"){
-                 
-                 }*/
             }// end of vstack
         }
     }

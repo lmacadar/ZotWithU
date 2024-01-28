@@ -46,7 +46,7 @@ struct Profile: View{
                     .toolbarBackground(.visible, for: .tabBar)
                 Settings()
                     .tabItem {
-                        Label("Settings", systemImage: "pencil.circle")
+                        Label("Settings", systemImage: "gear")
                     }
                     .toolbarBackground(Color.yellow, for: .tabBar)
                     .toolbarBackground(.visible, for: .tabBar)

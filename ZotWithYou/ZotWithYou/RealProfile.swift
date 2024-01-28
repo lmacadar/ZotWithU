@@ -15,14 +15,32 @@ struct RealProfile: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
-                Text("Profile")
-                Image("blankprofile")
-                    .resizable()
-                    .frame(width: 50, height: 50)
-                    
-                    .clipShape(Circle())
-                Text(globName)
-                Text("Major: ")
+                HStack {
+                    Text("  ")
+                    Text("Profile")
+                        .font(.system(size: 34))
+                        .bold()
+                }
+                
+                HStack {
+                    Text("  ")
+                    Image("blankprofile")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .clipShape(Circle())
+                }
+                
+                HStack {
+                    Text("  ")
+                    Text(globName)
+                }
+                
+                HStack {
+                    Text("  ")
+                    Text("Major: ")
+                }
+               
+                
                 
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
@@ -91,8 +109,11 @@ struct RealProfile: View {
                     .font(.system(size: CGFloat(fontsize)))
                 
                 
-
-                Text("Interests: ")
+                HStack {
+                    Text("  ")
+                    Text("Interests: ")
+                }
+                
                 HStack (spacing: CGFloat(space)) {
                     Button("") {
                         
