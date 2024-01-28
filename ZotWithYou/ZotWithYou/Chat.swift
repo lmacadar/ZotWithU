@@ -18,13 +18,13 @@ class Invites{
         self.inviteDescription = inviteDescription
         self.accepted = accepted
     }
-    func getinviteName(){
+    func getinviteName() -> String{
         return (inviteName)
     }
-    func getinviteDescription(){
+    func getinviteDescription() -> String{
         return (inviteDescription)
     }
-    func getaccepted(){
+    func getaccepted() -> Bool{
         return (accepted)
     }
     func acceptInvite(){
@@ -37,33 +37,33 @@ struct Chat: View{
     @State private var inviteList: [Invites] = []
     @State private var acceptedInvitesList: [Invites] = []
 
-    @State private var displayedText: [String] = "Invite List:\n"
-    @State private var shouldButtonShow: [Bool] = false
+    @State private var displayedText: String = "Invite List:\n"
+    @State private var shouldShowButton: Bool = false
 
     var body: some View{
         VStack{
             Text("Invite Page")
             Button("See Invites"){
-                if((inviteList?.isEmpty ?? true)){
+                if((inviteList.isEmpty == true)){
                     displayedText += ("Why don't you start a group?")
                 }else{
-                    shouldShowButton == true
-                    while(inviteList?.isEmpty ?? false){
+                    shouldShowButton = true
+                    while(inviteList.isEmpty == false){
                         if(shouldShowButton == true){
                             Text(displayedText)
                             displayedText += inviteList[0].getinviteName()
                             Button("Accept"){
-                                inviteList[].acceptInvite()
-                                displayedText -= inviteList[0].getinviteName()
+                                inviteList[0].acceptInvite()
+                                displayedText = ""
                                 acceptedInvitesList.append(inviteList[0])
                                 inviteList.remove(at: 0)
                             }
                             Button("Decline"){
-                                displayedText -= inviteList[0].getinviteName()
+                                displayedText = ""
                                 inviteList.remove(at: 0)
                             }
                         }
-                    shouldShowButton == false
+                    shouldShowButton = false
                     }
                 }
             }
